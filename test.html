@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Flip Effect</title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="front-content">
+                        <video autoplay muted loop>
+                            <source src="1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="back-content">
+                        <p>Flip Side Content 1</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="front-content">
+                        <video autoplay muted loop>
+                            <source src="2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="back-content">
+                        <p>Flip Side Content 2</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="front-content">
+                        <video autoplay muted loop>
+                            <source src="3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="back-content">
+                        <p>Flip Side Content 3</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script >
+        // Initialize Swiper
+var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: false,
+    },
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+// Add flip effect to slides
+const slides = document.querySelectorAll(".swiper-slide");
+
+slides.forEach((slide) => {
+    // Create a flip toggle function
+    const toggleFlip = (forceState = null) => {
+        // If forceState is not provided, toggle the current state
+        const isFlipped = slide.classList.contains('flipped');
+        const shouldFlip = forceState !== null ? forceState : !isFlipped;
+
+        if (shouldFlip) {
+            slide.classList.add('flipped');
+        } else {
+            slide.classList.remove('flipped');
+        }
+    };
+
+    // Add mouse interaction
+    slide.addEventListener("mouseenter", () => {
+        toggleFlip(true);
+    });
+
+    slide.addEventListener("mouseleave", () => {
+        toggleFlip(false);
+    });
+
+    // Optional: Add click interaction
+    slide.addEventListener("click", () => {
+        toggleFlip();
+    });
+});
+    </script>
+</body>
+
+</html>

@@ -20,7 +20,7 @@ html, body {
 }
 
 #page1 {
-    min-height: 100vh;
+    min-height: 110vh;
     position: relative;
     width: 100%;
     padding: 0 2vw;
@@ -28,7 +28,7 @@ html, body {
     margin-bottom: -1px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -40,6 +40,7 @@ html, body {
     align-items: center;
     border-radius: 20px;
     border: solid thin black;
+    top: 3vw;
 }
 
 #page1>#login-container>#login-left-container,
@@ -54,8 +55,12 @@ html, body {
     gap: 2vw;
 }
 
+#login-right-container>.content1{
+    font-size: 2vw;
+}
+
 #page1>#login-container>#login-left-container {
-    background-image: url("/files/images/13.jpeg");
+    background-image: url("/images/24.jpeg ");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,13 +97,14 @@ html, body {
     gap: 0.8vw;
     
 }
+
 .form-group1,.form-group2 {
     font-size: 1.2vw;
     font-weight: 600;
 }
 
 
-#content4{
+.content4{
     background-color: transparent;
     font-weight: 300;
     padding: 0.5vw 3vw;
@@ -108,14 +114,14 @@ html, body {
     transition: all 0.3s ease-in-out;
 }
 
-#content4:hover{
+.content4:hover{
     background-color: black;
     /* border: transparent; */
     color: #fff;
     cursor: pointer;
 }
 
-#content5{
+.content5{
     font-size: 0.8vw;
     margin-top: 2vw;
     display: block;
@@ -123,13 +129,13 @@ html, body {
     text-decoration: none;
 }
 
-#content5:hover{
+.content5:hover{
 
     color: #1249a2; 
 }
 
 
-#content3{
+.content3{
     position: absolute;
     top: 4%;
     right: 8%;
@@ -143,5 +149,76 @@ html, body {
 
 #content3:hover{
     color: #1249a2; 
+
+}
+
+
+@media (max-width: 700px){
+    #page1>#login-container {
+            flex-direction: column;
+            width: 95vw;
+        height: 80vh;     
+        justify-content: space-evenly;
+        align-items: center;
+    }
+   
+#page1>#login-container>#login-left-container,
+#page1>#login-container>#login-right-container {
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#page1 input {
+    width: 47vw;
+    height: 8vw;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5vw;
+}
+
+.form-group1,.form-group2 {
+    font-size: 4vw;
+    font-weight: 500;
+    
+}
+
+#login-right-container>.content1{
+    font-size:7vw;
+}
+
+.content3{
+
+    top: 8%;
+    right: 4%;
+    font-size: 2.4vw;
+    text-decoration: none;
+    color: #4285F4;
+    padding: 0.5vw 3vw;
+    border-radius: 25px;
+    border: solid black thin;
+}
+.content5{
+    font-size: 3vw;
+    text-decoration: underline;
+    margin-top: 4vw;
+}
+
+.content4{
+    background-color: transparent;
+    font-weight: 600;
+    padding: 01vw 5vw;
+    border-radius: 20px;
+    border: solid thin black;
+    transition: all 0.3s ease-in-out;
+}
 
 }
