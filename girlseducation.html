@@ -420,7 +420,28 @@
     <script src="javascript_files/menu.js"></script>
     <script src="javascript_files/loginStatus.js"></script>
 
+    <script>
+        const extractedContent = {};
 
+document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, strong, br").forEach((element, index) => {
+    let key = `content${index + 1}`;
+    let value = element.innerHTML.trim();
+
+    // Replace <br> with a newline character for readability
+    value = value.replace(/<br\s*\/?>/gi, "\n");
+
+    // Store in object
+    extractedContent[key] = value;
+    
+    // Assign an ID if not already present
+    if (!element.id) {
+        element.id = key;
+    }
+});
+
+console.log(extractedContent);
+    
+    </script>
 </body>
 
 </html>
