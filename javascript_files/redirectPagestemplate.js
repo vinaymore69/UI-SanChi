@@ -64,35 +64,7 @@ gsap.utils.toArray(".item").forEach((item) => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
 
-    // Apply SplitText to target heading
-    const childSplit = new SplitText(".split-text1", {
-        type: "lines",
-        linesClass: "split-child"
-    });
-
-    new SplitText(".split-text1", {
-        linesClass: "split-parent"
-    });
-
-    // GSAP Animation
-    gsap.from(childSplit.lines, {
-        duration: 3, // Slightly faster animation
-        yPercent: 100,
-        opacity: 0, // Smooth fade-in
-        ease: "power4.out",
-        stagger: 0.1,
-        scrollTrigger: {
-            trigger: ".split-text1",
-            start: "top 65%", // Triggers earlier
-            end: "bottom 40%", // Ends later
-            scrub: true, // Instant animation, no slow scroll
-            //markers: true // Set to true for debugging
-        }
-    });
-});
 
 
 
