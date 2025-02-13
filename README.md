@@ -33,7 +33,7 @@ We welcome 💡 contributions from 🏫 educators, 👨‍💻 developers, and �
 
 For any 📩 inquiries, 🤝 partnerships, or 🤲 support, reach out to us:
 
-- 📧 Email: [educate@gmail.com](mailto:educate@gmail.com)
+- 📧 Email: [sanchi.educate@gmail.com](mailto:educate@gmail.com)
 - 🌐 Website: [www.sanchiforgirls.in](http://www.sanchiforgirls.in)
 - 📱 Social Media: Follow us on 📸 Instagram, 📘 Facebook, and 🐦 Twitter @sanchigirlsedu
 
