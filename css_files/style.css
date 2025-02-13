@@ -277,14 +277,14 @@ html, body {
 }
 
 #fixed-image {
-    height: 30vw;
-    width: 24vw;
+    height: 35vw;
+    width: 25vw;
     background: #ffffff;
     border-radius: 10px;
     position: fixed;
     z-index: 99;
     left: 60%;
-    top: 25%;
+    top: 20%;
     display: none;
     background-position: center;
     background-repeat: no-repeat;

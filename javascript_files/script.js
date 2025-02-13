@@ -1,7 +1,10 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 function page4Animation() {
 
     var elemC = document.querySelector('#elem-container');
     var fixed = document.querySelector("#fixed-image");
+
     elemC.addEventListener("mouseenter", function () {
         fixed.style.display = "block";
 
@@ -12,16 +15,19 @@ function page4Animation() {
     });
 
     var elems = document.querySelectorAll(".elem");
+
     elems.forEach(function (e) {
         e.addEventListener("mouseenter", function () {
             var image = e.getAttribute("data-image");
-            fixed.style.backgroundImage = `url(${image})`;
+            fixed.style.backgroundImage = `url('${image}')`;
         });
     });
+    
 }
-
-
 page4Animation();
+});
+
+
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -56,10 +62,10 @@ believing that every small effort leads to a greater impact.`,
         content4: 'Volunteering is essential for empowering individuals and strengthening communities. It fosters unity, drives positive change, and creates lasting impact. A dedicated team of volunteers contributes to social well-being, inspires collective action, and builds a brighter future for all.',
 
         content5: `Girls Education`,
-        content6: `Anti Narcotics`,
-        content7: `Let's Share`,
-        content8: `Empower Through Education`,
-        content9: `Dream Educate Achieve`,
+        content6: `Primary Education`,
+        content7: `Unprivileged Students Wellfare`,
+        content8: `Physical Health`,
+        content9: `Mental Health`,
         content10: `Home`,
         content11: `About`,
         content12: `Language  `,
@@ -84,9 +90,9 @@ believing that every small effort leads to a greater impact.`,
         content31: `RedBox Agency supports impactful initiatives like SanChi to empower education and uplift underprivileged communities. Their commitment to innovation and inclusivity creates meaningful change, making a difference in students’ lives and society as a whole.`,
         content32: `DadsInTown, parent company of RedBox, proudly supports SanChi, promoting education and inclusivity. Their dedication to innovation and community development inspires change, enriching the lives of students and society as a whole.`,
         content33: `SanChi Education for Girls`,
-        content34: `Welfare for specially Challanged people`,
-        content35: `Degital Literacy`,
-        content36: `Primary Education`,
+        content34: `Environment`,
+        content35: `Digital Literacy`,
+        content36: `Antinarcotics`,
 
 
     },

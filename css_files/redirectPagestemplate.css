@@ -121,7 +121,7 @@ path {
     
 }
 .domain-sub-heading-sticky>h5{
-    font-size: 6vw;
+    font-size: 5.5vw;
     font-weight: 200;
     line-height: 6vw;
     /* background-color: #377067; */
@@ -142,7 +142,12 @@ path {
     margin-top: 1vw;
     text-align: justify;
 }
-
+.domain-sticky-content>p>strong{
+    font-size: 2.5vw;
+    line-height: 3vw;
+    font-weight: 600;
+    color: #019e55;
+}
 
 
 #page3{
