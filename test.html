@@ -1,114 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiper Flip Effect</title>
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body>
-    <section>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="front-content">
-                        <video autoplay muted loop>
-                            <source src="1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="back-content">
-                        <p>Flip Side Content 1</p>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="front-content">
-                        <video autoplay muted loop>
-                            <source src="2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="back-content">
-                        <p>Flip Side Content 2</p>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <div class="front-content">
-                        <video autoplay muted loop>
-                            <source src="3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="back-content">
-                        <p>Flip Side Content 3</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script >
-        // Initialize Swiper
-var swiper = new Swiper(".swiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-        slideShadows: false,
-    },
-    loop: true,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-// Add flip effect to slides
-const slides = document.querySelectorAll(".swiper-slide");
-
-slides.forEach((slide) => {
-    // Create a flip toggle function
-    const toggleFlip = (forceState = null) => {
-        // If forceState is not provided, toggle the current state
-        const isFlipped = slide.classList.contains('flipped');
-        const shouldFlip = forceState !== null ? forceState : !isFlipped;
-
-        if (shouldFlip) {
-            slide.classList.add('flipped');
-        } else {
-            slide.classList.remove('flipped');
+    <title>Animated Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-    };
 
-    // Add mouse interaction
-    slide.addEventListener("mouseenter", () => {
-        toggleFlip(true);
-    });
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
 
-    slide.addEventListener("mouseleave", () => {
-        toggleFlip(false);
-    });
+        .menu__link {
+            font-size: 24px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
 
-    // Optional: Add click interaction
-    slide.addEventListener("click", () => {
-        toggleFlip();
-    });
-});
+        .menu__link:hover {
+            color: #ff5733;
+        }
+
+        .char {
+            display: inline-block;
+            position: relative;
+            transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.6s ease;
+        }
+
+        .menu__link .char::before,
+        .menu__link .char::after {
+            content: attr(data-char);
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.6s ease;
+        }
+
+        .menu__link .char::before {
+            transform: translateY(-100%);
+        }
+
+        .menu__link .char::after {
+            transform: translateY(100%);
+        }
+
+        .menu__link:hover .char::before {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .menu__link:hover .char::after {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu__link">Editorial</div>
+        <div class="menu__link">Artworks</div>
+        <div class="menu__link">Commercial</div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".menu__link").forEach(link => {
+            let chars = link.textContent.split("" ).map(char => `<span class='char' data-char='${char}'>${char}</span>`).join(" ");
+            link.innerHTML = chars;
+        });
+
+        const hoverSound = new Audio("https://lphfulotzguupkygfvkp.supabase.co/storage/v1/object/public/webflow-showcase/hover_cropped.mp3");
+        const clickSound = new Audio("https://lphfulotzguupkygfvkp.supabase.co/storage/v1/object/public/webflow-showcase/click%20sound.mp3");
+
+        hoverSound.preload = "auto";
+        clickSound.preload = "auto";
+
+        document.querySelectorAll(".menu__link").forEach(link => {
+            link.addEventListener("mouseenter", () => {
+                hoverSound.currentTime = 0;
+                hoverSound.play();
+            });
+            link.addEventListener("click", () => {
+                clickSound.currentTime = 0;
+                clickSound.play();
+            });
+        });
     </script>
 </body>
-
 </html>
