@@ -22,9 +22,6 @@ html, body {
     overflow: hidden;
 }
 
-/* ::-webkit-scrollbar {
-    display: none;
-} */
 
 #page1 {
     min-height: 100vh;
