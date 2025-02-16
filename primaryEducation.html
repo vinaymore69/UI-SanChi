@@ -199,28 +199,16 @@
         <!-- Page 3 content -->
         <div id="page3">
             <div class="masonry">
-                <div class="item item1"><img src="All domains Images/Vertical Images JPG/56.jpg" alt=""></div>
-                <div class="item item2"><img src="All domains Images/Vertical Images JPG/57.jpg" alt=""></div>
-                <div class="item item3"><img src="All domains Images/Vertical Images JPG/58.jpg" alt=""></div>
-                <div class="item item4"><img src="All domains Images/Vertical Images JPG/59.jpg" alt=""></div>
-                <div class="item item5"><img src="All domains Images/Vertical Images JPG/60.jpg" alt=""></div>
-                <div class="item item6"><img src="All domains Images/Vertical Images JPG/61.jpg" alt=""></div>
-                <div class="item item7"><img src="All domains Images/Vertical Images JPG/62.jpg" alt=""></div>
-                <div class="item item8"><img src="All domains Images/Vertical Images JPG/63.jpg" alt=""></div>
-                <div class="item item9"><img src="All domains Images/Vertical Images JPG/64.jpg" alt=""></div>
-                <div class="item item10"><img src="All domains Images/Horizontal Images JPG/16.jpg" alt=""></div>
-                <div class="item item11"><img src="All domains Images/Horizontal Images JPG/17.jpg" alt=""></div>
-                <div class="item item12"><img src="All domains Images/Horizontal Images JPG/18.jpg" alt=""></div>
-                <div class="item item13"><img src="All domains Images/Horizontal Images JPG/19.jpg" alt=""></div>
-                <div class="item item14"><img src="All domains Images/Horizontal Images JPG/20.jpg" alt=""></div>
-                <div class="item item15"><img src="All domains Images/Horizontal Images JPG/21.jpg" alt=""></div>
-                <div class="item item16"><img src="All domains Images/Horizontal Images JPG/22.jpg" alt=""></div>
-                <div class="item item17"><img src="All domains Images/Horizontal Images JPG/23.jpg" alt=""></div>
-                <div class="item item18"><img src="All domains Images/Horizontal Images JPG/24.jpg" alt=""></div>
-                <div class="item item19"><img src="All domains Images/Horizontal Images JPG/25.jpg" alt=""></div>
-                <div class="item item20"><img src="All domains Images/Horizontal Images JPG/26.jpg" alt=""></div>
-
-
+                <div class="item item1"><img src="All domains Images/Vertical Images JPG/14.jpg" alt=""></div>
+                <div class="item item2"><img src="All domains Images/Horizontal Images JPG/1.jpg" alt=""></div>
+                <div class="item item3"><img src="All domains Images/Horizontal Images JPG/2.jpg" alt=""></div>
+                <div class="item item4"><img src="All domains Images/Horizontal Images JPG/3.jpg" alt=""></div>
+                <div class="item item5"><img src="All domains Images/Horizontal Images JPG/9.jpg" alt=""></div>
+                <div class="item item6"><img src="All domains Images/Horizontal Images JPG/28.jpg" alt=""></div>
+                <div class="item item7"><img src="All domains Images/Horizontal Images JPG/29.jpg" alt=""></div>
+                <div class="item item8"><img src="All domains Images/Horizontal Images JPG/30.jpg" alt=""></div>
+                <div class="item item9"><img src="All domains Images/Horizontal Images JPG/31.jpg" alt=""></div>
+           
             </div>
 
         </div>
@@ -430,28 +418,6 @@
     <script src="javascript_files/menu.js"></script>
     <script src="javascript_files/loginStatus.js"></script>
 
-    <script>
-        const extractedContent = {};
-
-document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, strong, br").forEach((element, index) => {
-    let key = `content${index + 1}`;
-    let value = element.innerHTML.trim();
-
-    // Replace <br> with a newline character for readability
-    value = value.replace(/<br\s*\/?>/gi, "\n");
-
-    // Store in object
-    extractedContent[key] = value;
-    
-    // Assign an ID if not already present
-    if (!element.id) {
-        element.id = key;
-    }
-});
-
-console.log(extractedContent);
-    
-    </script>
 </body>
 
 </html>

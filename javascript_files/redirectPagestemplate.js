@@ -69,47 +69,6 @@ gsap.utils.toArray(".item").forEach((item) => {
 
 
 
-function preloadImages(imageUrls, callback) {
-    let loadedCount = 0;
-    const totalImages = imageUrls.length;
-
-    imageUrls.forEach((url) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = () => {
-            loadedCount++;
-            if (loadedCount === totalImages) {
-                callback(); // Call function when all images are loaded
-            }
-        };
-        img.onerror = () => {
-            console.error(`Image failed to load: ${url}`);
-        };
-    });
-}
-
-// List of images to preload
-const imageList = [
-    "images/10.jpeg",
-    "images/12.jpeg",
-    "images/13.jpeg",
-    "images/14.jpeg",
-    "images/15.jpeg",
-    "images/16.jpeg",
-    "images/17.jpeg",
-    "images/18.jpeg",
-    "images/19.jpeg",
-    "images/20.jpeg"
-];
-
-// Preload images, then show the page
-preloadImages(imageList, function () {
-    console.log("All images loaded!");
-    document.body.classList.add("images-loaded"); // Add class when done
-});
-
-
-
 var path = "M 0 200 Q 825 200 1650 200";
 var finalPath = "M 0 200 Q 825 200 1650 200";
 var string = document.querySelector("#string2");

@@ -31,6 +31,10 @@ html, body {
     background-color: #ffffff;
     margin-bottom: -1px;
 }
+.domains-headings{
+    font-size: 9vw;
+    padding-left: 1vw;
+}
 
 #page1 h1 {
     margin-top: 7vw;
@@ -206,25 +210,15 @@ content: 'o ';
 #page3>#button2-content>h3,
 #page3>#button3-content>h3,
 #page3>#button4-content>h3 {
-    margin-top: 0;
-    font-size: 5.5vw;
-    margin-bottom: -4vw;
-    width: 100%;
+    font-size: 7.5vw;
     display: flex;
-    justify-content: center;
-    color: #74C476;
-    cursor: pointer;
-    text-transform: uppercase;
+    width: 100%;
+    /* text-decoration: underline; */
 }
 
 
 
-#page3>#button1-content>h3>u,
-#page3>#button2-content>h3>u,
-#page3>#button3-content>h3>u,
-#page3>#button4-content>h3>u {
-    color: #238B45;
-}
+
 
 #page3>#button1-content>p {
     font-size: 1.6vw;
@@ -441,7 +435,6 @@ content: 'o ';
 
 
 
-
 @media (max-width: 700px){
 
     
@@ -511,19 +504,18 @@ content: 'o ';
         min-height: 10vh;
     }
     
-#page3>#button1-content>h3,
+/* #page3>#button1-content>h3,
 #page3>#button2-content>h3,
 #page3>#button3-content>h3,
 #page3>#button4-content>h3 {
     margin-top: 10vw;
-    font-size: 10vw;
     margin-bottom: 4vw;
     width: 100%;
     display: flex;
     justify-content: left;
     color: #57ae5a;
     text-transform: uppercase;
-}
+} */
 
 
 #page3>#button1-content>p {
