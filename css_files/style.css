@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
 
 
@@ -344,12 +344,16 @@ html, body {
 
 
 #page6{
-    min-height: 100vh;
+    min-height: 50vh;
     position: relative;
     width: 100%;
-    padding: 0 4vw;
-    background-color: #ffffff;
+    padding: 3vw 0vw 0vw 0vw;
+    background-color: #2E4C47;
     margin-bottom: -1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    color: #fff;
 }
 
 #page6 > #footer-top{
@@ -362,17 +366,26 @@ html, body {
     /* flex-direction: row; */
     align-items: center;
     gap: 3vw;
-    padding: 1vw;
+    padding: 1vw 5vw;
+    
 }
 #footer-socials{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: solid thin #b9b9b952;
+    /* background-color: #C9FD0E; */
+    padding: 2.5vw 0vw;
 }
 #footer-copyrights{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-copyrights h4{
     font-size: 1.3vw;
+    font-weight: 300;
 }
 #footer-links{
     color: black;
@@ -381,7 +394,7 @@ html, body {
 }
 #footer-links > a{
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-size: 1.5vw;
 }
 #footer-media{
@@ -394,32 +407,38 @@ html, body {
     content: "Follow us";
     font-size: 2vw;
     font-weight: 400;
-    /* font-family: poppins; */
 
 }
 #footer-media i {   
      font-size: 2.4vw;
+     cursor: pointer;
 }
 
 #footer-description{
     display: flex;
     justify-content: flex-start   ;
     align-items: start;
-    font-size: 2vw;
+    padding: 2vw 0vw;
+
 }
 #footer-description p{
-
-    width: 80%;
-
+    font-size: 1.8vw;
+    width: 95%;
+    font-weight: 200;
 }
 
-#footer-down ::before{
-    content: "Journey Partners~";
-    /* background-color: #C9FD0E; */
+#footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 2vw;
+    background-color: #CBEDE0;
 }
 
 #footer-down > img{
     width: 10vw;
+
 }
 
 
