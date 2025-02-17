@@ -66,13 +66,13 @@ const content = {
             Awareness, Mental Health, Environment, and Health Camps. The
             Vidyalankar Volunteering Committee comprises of the following
             faculty coordinators as well as Student coordinators. <br/><br/>
-           <b> Mentor: 
-            Ms.Vaishali Malkar</b> <br/>
-            <b>Convenor: Ms. Hemangi Naikare</b> <br/>
-            <b>Member: Ms. Prerana Jalgaonkar</b> <br/>
-            <b>Member: Mr. Suyog Satawalekar</b> <br/>
-            <b>Student President: Mr. Ishaan Salgaonkar</b> <br/>
-            <b>Student Vice-President: Ms. Janhavi Raikar</b><br/>`,
+            <b style="font-weight: 500;"><u> Mentor</u>:     </b>    Ms.Vaishali Malkar <br/>
+            <b style="font-weight: 500;"> <u>Mentor</u>: </b>  Ms.Vaishali Malkar <br/>
+            <b style="font-weight: 500;"><u>Convenor</u>:</b> Ms. Hemangi Naikare <br/>
+            <b style="font-weight: 500;"><u>Member</u>:</b> Ms. Prerana Jalgaonkar <br/>
+            <b style="font-weight: 500;"><u>Member</u>:</b> Mr. Suyog Satawalekar <br/>
+            <b style="font-weight: 500;"><u>Student President</u>:</b> Mr. Ishaan Salgaonkar <br/>
+            <b style="font-weight: 500;"><u>Student Vice-President</u>:</b> Ms. Janhavi Raikar<br/>`,
         content4: 'Volunteering is essential for empowering individuals and strengthening communities. It fosters unity, drives positive change, and creates lasting impact. A dedicated team of volunteers contributes to social well-being, inspires collective action, and builds a brighter future for all.',
 
         content5: `Girls Education`,

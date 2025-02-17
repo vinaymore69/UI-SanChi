@@ -207,9 +207,10 @@ html, body {
 
 #page2-bottom h1 {
     font-size: 1.8vw;
-    width: 75%;
+    width: 70%;
     line-height: 2.2vw;
-    font-weight: 500;
+    font-weight: 300;
+    text-align: justify;
 }
 
 #bottom-part2 {
