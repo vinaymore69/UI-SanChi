@@ -72,7 +72,8 @@ const content = {
             <b style="font-weight: 500;"><u>Member</u>:</b> Ms. Prerana Jalgaonkar <br/>
             <b style="font-weight: 500;"><u>Member</u>:</b> Mr. Suyog Satawalekar <br/>
             <b style="font-weight: 500;"><u>Student President</u>:</b> Mr. Ishaan Salgaonkar <br/>
-            <b style="font-weight: 500;"><u>Student Vice-President</u>:</b> Ms. Janhavi Raikar<br/>`,
+            <b style="font-weight: 500;"><u>Student Vice-President</u>:</b> Ms. Janhavi Raikar<br/>
+            `,
         content4: 'Volunteering is essential for empowering individuals and strengthening communities. It fosters unity, drives positive change, and creates lasting impact. A dedicated team of volunteers contributes to social well-being, inspires collective action, and builds a brighter future for all.',
 
         content5: `01: Girls Education`,
