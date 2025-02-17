@@ -53,12 +53,26 @@ const content = {
     english: {
         // content0: 'SanChi',
         content1: "Volunteering is the key to empowering communities and creating a brighter future for all.",
-        content2: "Empower <br> Through <br> Education",
-        content3: `We are a team of passionate volunteers,
-driven by a shared commitment to making a difference. 
-With dedication and purpose, 
-we work together to create positive change,  
-believing that every small effort leads to a greater impact.`,
+        content2: " Vidyalankar  <br />Volunteering <br /> Committee",
+        content3: `   Vidyalankar Volunteering Committee The Vidyalankar Volunteering
+            Committee is dedicated to creating a positive impact in society by
+            encouraging students to engage in various volunteering activities. <br/>
+            These activities not only help students learn about global issues
+            but also allow them to contribute to the community and bring
+            positive changes to people's lives. <br/><br/>
+            The committee collaborates with
+            different NGOs to focus on important areas like Primary Education,
+            Girl Education, Unprivileged Students Welfare, Antinarcotics
+            Awareness, Mental Health, Environment, and Health Camps. The
+            Vidyalankar Volunteering Committee comprises of the following
+            faculty coordinators as well as Student coordinators. <br/><br/>
+           <b> Mentor: 
+            Ms.Vaishali Malkar</b> <br/>
+            <b>Convenor: Ms. Hemangi Naikare</b> <br/>
+            <b>Member: Ms. Prerana Jalgaonkar</b> <br/>
+            <b>Member: Mr. Suyog Satawalekar</b> <br/>
+            <b>Student President: Mr. Ishaan Salgaonkar</b> <br/>
+            <b>Student Vice-President: Ms. Janhavi Raikar</b><br/>`,
         content4: 'Volunteering is essential for empowering individuals and strengthening communities. It fosters unity, drives positive change, and creates lasting impact. A dedicated team of volunteers contributes to social well-being, inspires collective action, and builds a brighter future for all.',
 
         content5: `Girls Education`,
@@ -71,15 +85,15 @@ believing that every small effort leads to a greater impact.`,
         content12: `Language  `,
         content13: `Contact`,
         content14: `Resources`,
-        content15: ` Knowledge `,
-        content16: ` Through `,
-        content17: ` Education `,
-        content18: ` Empower`,
-        content19: ` Freedom`,
-        content20: ` Lights`,
-        content21: ` Dream`,
-        content22: ` Educate`,
-        content23: ` Achive`,
+        content15: ` Volunteerism Is the Voice of People Put Into Action `,
+        content16: ` Act Today Change Tomorrow `,
+        content17: ` Volunteer For Better World `,
+        content18: ` Small Steps Big Changes`,
+        content19: ` Share Your Time Share Your Heart`,
+        content20: ` Small Act's Big Impact`,
+        content21: ` Give Back Move Forward`,
+        content22: ` Do Good Feel Good`,
+        content23: ` Serve Inspire Transform`,
         content24: `<u>Brand</u> <u>Sponsor</u>s`,
         content25: `Vidyalankar Polytechnic`,
         content26: `RedBox Agency`,

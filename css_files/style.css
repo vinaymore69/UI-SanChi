@@ -48,7 +48,7 @@ html, body {
 }
 
 #center h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     line-height: 9vw;
     text-align: right;
 
@@ -169,7 +169,7 @@ html, body {
 }
 
 .RightToLeft {
-  animation: RightToLeft 10s infinite linear;
+  animation: RightToLeft 20s infinite linear;
 }
 
 @keyframes  RightToLeft {
@@ -177,7 +177,7 @@ html, body {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-60%);
+    transform: translateX(-100%);
   }
 }
 
@@ -206,9 +206,10 @@ html, body {
 }
 
 #page2-bottom h1 {
-    font-size: 3vw;
-    width: 65%;
-    line-height: 4vw;
+    font-size: 1.8vw;
+    width: 75%;
+    line-height: 2.2vw;
+    font-weight: 500;
 }
 
 #bottom-part2 {
