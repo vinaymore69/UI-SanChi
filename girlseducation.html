@@ -184,10 +184,11 @@
                         rallies, and poster presentations help educate communities about the importance of girl
                         education. Additionally, health and nutrition programs focusing on menstrual hygiene ensure that
                         girls do not miss school due to health-related issues.</p>
-                    <p>Furthermore, financial barriers are tackled through departmental sponsorship programs, which
-                        provide financial aid to underprivileged girls. By implementing these initiatives, the goal is
-                        to create an environment where every girl has the opportunity to learn, grow, and contribute to
-                        society.</p>
+                    <p>It aims towards promoting awareness about the rights of the girl child and to increase awareness
+                        on the importance of girl education, and their health and nutrition and also to promote the
+                        girls position in the society to make their living better among the society. We conduct various
+                        programs related to this cause such as street play, Rally, Poster presentation, departmental
+                        adoption of girl child etc.</p>
 
 
                 </div>
@@ -420,9 +421,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
         integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
-        <script src="javascript_files/splitText.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="javascript_files/splitText.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="javascript_files/redirectPagestemplate.js"></script>
     <script src="javascript_files/lenis.js"></script>
@@ -433,24 +434,24 @@
     <script>
         const extractedContent = {};
 
-document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, strong, br").forEach((element, index) => {
-    let key = `content${index + 1}`;
-    let value = element.innerHTML.trim();
+        document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, strong, br").forEach((element, index) => {
+            let key = `content${index + 1}`;
+            let value = element.innerHTML.trim();
 
-    // Replace <br> with a newline character for readability
-    value = value.replace(/<br\s*\/?>/gi, "\n");
+            // Replace <br> with a newline character for readability
+            value = value.replace(/<br\s*\/?>/gi, "\n");
 
-    // Store in object
-    extractedContent[key] = value;
-    
-    // Assign an ID if not already present
-    if (!element.id) {
-        element.id = key;
-    }
-});
+            // Store in object
+            extractedContent[key] = value;
 
-console.log(extractedContent);
-    
+            // Assign an ID if not already present
+            if (!element.id) {
+                element.id = key;
+            }
+        });
+
+        console.log(extractedContent);
+
     </script>
 </body>
 
