@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
 
-    var appendNumber = 4;
+    var appendNumber = 2;
     var prependNumber = 1;
     document
       .querySelector(".prepend-2-slides")
