@@ -136,20 +136,20 @@ content: 'o ';
 
 #aboutus-paragraph p {
     font-size: 0.9vw;
+    text-align: justify;
     /* font-family: 'poppins'; */
 }
 
 #about-hero-image {
     position: relative;
-    width: 40vw;
-    height: 95vh;
-    /* background-color: #68cd09; */
+    width: 47vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
     margin-top: -14vw;
     margin-bottom: 3vw;
-    /* background-image: url('../');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
+  
 }
 
 
@@ -171,10 +171,11 @@ content: 'o ';
 
 #page2 > img {
     width: 100vw;
-    height: 100vh;
-    /* object-fit: cover; */
+    height: 110vh;
+    object-fit: cover;
     object-position: center;
-    filter: grayscale(50%);
+
+    /* filter: grayscale(50%); */
 }
 
 
@@ -244,6 +245,7 @@ content: 'o ';
 #page3>#button1-content>#button1-description>p {
     font-size: 0.95vw;
     width: 24vw;
+    text-align: justify;
 }
 
 #page3>#button2-content {
@@ -484,6 +486,7 @@ content: 'o ';
     
     #aboutus-paragraph p {
         font-size: 3.3vw;
+        text-align: justify;
         /* font-family: 'poppins'; */
     }
     #about-hero-image{
